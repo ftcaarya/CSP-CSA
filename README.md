@@ -1,6 +1,8 @@
 # CSP
-Advanced Placement Computer Science Principles Solutions 
+Advanced Placement Computer Science Principles Solutions for CodeHS
 
-Unit 1 so far, 1.15-1.17
-Added Unit 5
-Only half, not all of Unit 5 is in yet.
+Added Unit 1 - so far, 1.15-1.18
+Added Unit 5 - Only whatever I could before he locked it
+Added Unit 4 - with the exceptino of two programs, the drawing ones.
+
+
