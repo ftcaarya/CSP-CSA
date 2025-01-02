@@ -1,6 +1,4 @@
 # Enter your code here
-from jwt.utils import number_to_bytes
-
 
 def minVal(numOne, numTwo):
     if numOne < numTwo:
