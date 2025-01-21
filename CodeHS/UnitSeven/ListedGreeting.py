@@ -2,4 +2,4 @@
 
 def greeting(user_info):
     myList = user_info.split()
-    return "Hello" + myList[0] + "! I also enjoy " + myList[2] + "!"
+    return "Hello, " + myList[0] + "! I also enjoy " + myList[2] + "!"
