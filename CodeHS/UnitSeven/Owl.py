@@ -8,3 +8,4 @@ def owl_count(text):
                     if word[j + 1] == "w" and word[j + 2] == "l":
                         counter += 1
 
+    return counter
