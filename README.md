@@ -10,4 +10,4 @@ Added Unit 5 - All of Unit 5, except one file -> I finished the Make Karel Move 
 Added Unit 4 - Everything is in.
 
 
-Unit 7 - More than halfway done, will merge to main in a bit.
+Unit 7 - Everything is in.
