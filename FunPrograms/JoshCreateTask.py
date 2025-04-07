@@ -2,7 +2,7 @@
 numbers = [5, 12, 3, 20, 8]
 
 # Function that handles adding and filtering numbers
-def number_menu():
+def number_menu(num_list):
     while True:
         # Asks the user for what their desired action is, to filter the numbers, to add numbers or exit the program
         action = input("\nType 'filter' to filter numbers, 'add' to add number, or 'quit' to exit: ").lower()
@@ -14,7 +14,7 @@ def number_menu():
             # Creates a list to hold filtered numbers separately
             filtered = []
             # Goes through every number in the list fo numbers
-            for num in numbers:
+            for num in num_list:
                 # if the number is above the filter limit specified the add it to the filtered list of numbers
                 if num > limit:
                     filtered.append(num)
@@ -31,10 +31,10 @@ def number_menu():
             If it is then it lets the user know it is already in the list and doesn't add it
             If it isn't then it adds the number to the list and lets user know what number was added
             """
-            if new_number in numbers:
+            if new_number in num_list:
                 print("Number already exists in the list. Not added.")
             else:
-                numbers.append(new_number)
+                num_list.append(new_number)
                 print(f"{new_number} added to the list.")
 
         # Executes if the desired user action is to quit and exit the program
@@ -47,4 +47,4 @@ def number_menu():
             print("Invalid option. Try again.")
 
 # Calls the function
-number_menu()
+number_menu(numbers)

@@ -2,7 +2,7 @@
 grades = [85.5, 90.0, 72.5, 88.0]
 
 # Function to interact with grades
-def grade_menu():
+def grade_menu(grade_list):
     while True:
         # Asks the user for their desired action of choice.
         action = input("\nType 'average' to calculate average, 'add' to add a grade, or 'quit' to exit: ").lower()
@@ -15,7 +15,7 @@ def grade_menu():
             count = 0
 
             # Goes through every grade in the list of grades
-            for grade in grades:
+            for grade in grade_list:
                 # If the grade is greater than or equal to the threshold then add it to the total and increase count by 1
                 if grade >= threshold:
                     total += grade
@@ -32,7 +32,7 @@ def grade_menu():
             # Asks the user for the new grade they want to add to the list of grades
             new_grade = float(input("Enter the new grade: "))
             # Adds the new grade to the list of grades
-            grades.append(new_grade)
+            grade_list.append(new_grade)
             # Lets the user know which grade was added
             print(f"Grade {new_grade} added.")
 
@@ -46,4 +46,4 @@ def grade_menu():
             print("Invalid option. Try again.")
 
 # Calls the whole function
-grade_menu()
+grade_menu(grades)

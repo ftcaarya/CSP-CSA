@@ -2,7 +2,7 @@
 items = [("Milk", 3.50), ("Bread", 2.00), ("Eggs", 4.25), ("Cereal", 5.75)]
 
 # Function that handles viewing and adding items
-def check_prices():
+def check_prices(price_list):
     while True:
         # Ask the user what action they want to do, view items in budget, add items to list, or quit the whole program
         action = input("\nType 'view' to see items within budget, 'add' to add item, or 'quit' to exit: ").lower()
@@ -13,7 +13,7 @@ def check_prices():
             limit = float(input("Enter your budget: "))
             print("Items within budget:")
             # Goes through every item and price in the list of items
-            for name, price in items:
+            for name, price in price_list:
                 # Prints the item and the price if it is less than the budget specified
                 if price <= limit:
                     print(f"{name}: ${price:.2f}")
@@ -24,7 +24,7 @@ def check_prices():
             name = input("Enter the name of the item: ")
             price = float(input("Enter the price of the item: "))
             # Add new item to list
-            items.append((name, price))
+            price_list.append((name, price))
             # Lets the user know what item they added
             print(f"{name} added with price ${price:.2f}") # Cut the price to only 2 decimal places for realism
 
@@ -38,4 +38,4 @@ def check_prices():
             print("Invalid option. Try again.")
 
 # Calls the function
-check_prices()
+check_prices(items)
