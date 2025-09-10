@@ -1,3 +1,7 @@
+# CSA
+Added 1.1-1.6 Other than the earlier ones that have a Investigate.txt
+
+
 # CSP
 Advanced Placement Computer Science Principles Solutions for CodeHS
 

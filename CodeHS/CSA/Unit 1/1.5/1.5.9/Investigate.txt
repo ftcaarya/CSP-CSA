@@ -1,0 +1,15 @@
+1. Which operation(s) resulted in integer overflow?
+Subtracting 1 from the minimum value, adding 1 to the maximum value, and multiplying the maximum value by 2 caused overflow. These operations went outside the valid range of integers.
+
+2. Why did these scenarios result in integer overflow?
+The results exceeded the 32-bit integer range of –2,147,483,648 to 2,147,483,647. Since int values cannot grow beyond this limit, they wrapped around to the opposite end.
+
+3. Which operation(s) did not result in integer overflow?
+Dividing the minimum value by 2 did not cause overflow. This is because the result stayed within the valid integer range.
+
+4. Why did these scenarios not result in integer overflow?
+The calculation produced a value that was still between the minimum and maximum int values. No wraparound occurred since the number was representable.
+
+5. What could be a real-world scenario where an integer
+overflow error might occur?
+A banking system using int for account balances could overflow if transactions push values past the maximum. Video games can also overflow if a player's score exceeds the int range and flips to negative.

@@ -1,0 +1,10 @@
+1. What is the expected output of the program?
+The expected output is 3456.7 Solari (because 100000 × 0.034567 = 3456.7).
+
+2. How does the program output differ from the expected output?
+The program prints something like 3456.6999999999998 instead of exactly 3456.7. This extra decimal tail shows a small discrepancy.
+
+3. This discrepancy is due to a round-off error.
+In your own words, explain why this specific error occurs.
+This happens because floating-point numbers in Java are stored in binary, not decimal. Some decimal fractions (like 0.034567) cannot be represented exactly in binary, so the computer stores a very close approximation. When calculations are performed, tiny differences appear as round-off errors.
+
