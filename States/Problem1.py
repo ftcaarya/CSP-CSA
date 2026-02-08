@@ -1,6 +1,3 @@
-from pydantic import validate_email
-
-
 def temp():
     print("In order to convert the provided temperature please input the temperature and first initial of the scale. (F - Fahrenheit, C - Celsius, K - Kelvin)")
     init = input("Please enter temperature and scale: ")
