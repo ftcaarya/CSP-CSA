@@ -66,5 +66,4 @@ System.out.println("Number of students whose first name starts with M: " + resul
 
     return count;
 }
-
 }
