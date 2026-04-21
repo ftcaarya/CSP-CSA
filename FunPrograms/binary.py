@@ -23,7 +23,7 @@ def binary_to_dec(binaryNum):
 
     return total
 
-def dec_to_binary_sub_method(decimal):
+def dec_to_binary_sub_method(decimal: int):
     exp = 0
     total = 0
     while total < decimal:
@@ -32,13 +32,13 @@ def dec_to_binary_sub_method(decimal):
 
     exp -= 1
     binNum = ""
-    while decimal != 0 and exp >= 0:
+    while int(decimal) != 0 and exp >= 0:
         if decimal - 2 ** exp > 0:
             decimal -= 2 ** exp
             binNum += "1"
-        elif decimal - 1 ** exp == 0:
+        elif decimal - 2 ** exp == 0:
             decimal -= 2 ** exp
-            binNum += 1
+            binNum += "1"
             for i in range(exp):
                 binNum += "0"
         else:

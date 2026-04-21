@@ -30,6 +30,4 @@ def analyze_dataset(data = input("Please enter the dataset: ")):
     for num in sorted(freq.keys()):
         print(f"{num} appeared {freq[num]} times within the dataset")
 
-
-
 analyze_dataset()
